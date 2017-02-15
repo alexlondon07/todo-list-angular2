@@ -9,7 +9,6 @@
         <li *ngFor="let todo of todos; let i=index">
               <input type="checkbox" class="checkbox" [(ngModel)]="todo.completed" />
               <span [ngClass]="{'checked': todo.completed}">{{ todo.newTodo }}</span>
-              <span (click)="deleteTodo(i)" class="delete-icon"></span>
           </li>
         </ul>
         <div class="mtop20">
